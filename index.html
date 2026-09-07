@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - Tugas Rutin 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌤️ Weather App</h1>
+    <p class="subtitle">Cek cuaca kota kamu di sini</p>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Masukkan nama kota...">
+      <button id="searchBtn">Cari</button>
+    </div>
+
+    <div class="unit-toggle">
+      <button id="unitBtn">Tampilkan dalam °F</button>
+    </div>
+
+    <div id="loading" class="loading hidden">Loading...</div>
+
+    <div id="errorMsg" class="error hidden"></div>
+
+    <div id="weatherCard" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" src="" alt="ikon cuaca">
+      <p id="temp" class="temp"></p>
+      <p id="description" class="desc"></p>
+      <p id="humidity"></p>
+    </div>
+
+    <div class="history-box">
+      <h3>Riwayat Pencarian</h3>
+      <ul id="historyList"></ul>
+      <button id="clearHistoryBtn">Hapus Riwayat</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

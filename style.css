@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 15px;
+}
+
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #2d3436;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #636e72;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#cityInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#searchBtn {
+  padding: 10px 16px;
+  border: none;
+  background: #0984e3;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#searchBtn:hover {
+  background: #0870c4;
+}
+
+.unit-toggle {
+  margin-bottom: 15px;
+}
+
+#unitBtn {
+  background: none;
+  border: 1px solid #0984e3;
+  color: #0984e3;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.loading {
+  color: #636e72;
+  margin: 15px 0;
+}
+
+.error {
+  background: #ffe0e0;
+  color: #d63031;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.weather-card {
+  background: #f1f6ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.temp {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2d3436;
+  margin: 5px 0;
+}
+
+.desc {
+  text-transform: capitalize;
+  color: #636e72;
+  margin-bottom: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.history-box {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.history-box h3 {
+  font-size: 15px;
+  color: #2d3436;
+  margin-bottom: 8px;
+}
+
+#historyList {
+  list-style: none;
+  max-height: 120px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#historyList li {
+  padding: 6px 10px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#historyList li:hover {
+  background: #dfe6e9;
+}
+
+#clearHistoryBtn {
+  width: 100%;
+  padding: 8px;
+  background: #ff7675;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  #searchBtn {
+    width: 100%;
+  }
+}
